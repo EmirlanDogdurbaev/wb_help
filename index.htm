@@ -26042,7 +26042,7 @@
                     help = id;
                     element.classList.toggle("active");
                     let help2;
-                    console.log(id + " id");
+               
                     if (id == 0) {
                       help2 = "530px";
                     } else if (id == 1) {
@@ -26055,7 +26055,7 @@
                     ].style.maxHeight = help2;
                   }
 
-                  console.log(element + " " + id);
+               
                 }
 
                 +(function () {
@@ -26081,22 +26081,20 @@
                       e.target.closest(".accordeon-section");
 
                     const currentHeight = accordeonSection.clientHeight;
-                    console.log(currentHeight);
+                   
                     if (currentHeight !== 58 || currentHeight !== 56) {
-                      console.log(e);
-                      console.log(e.target);
-                      console.log(e.target.closest(".accordeon-body"));
+                     
                       // e.target.closest('.accordeon-body').style.maxHeight = '0px';
                     }
 
                     var insideElHeight = accordeonSection.querySelector(
                       ".accordeon-body > *"
                     ).clientHeight;
-                    console.log(insideElHeight);
+                   
                     accordeonSection.querySelector(
                       ".accordeon-body"
                     ).style.maxHeight = insideElHeight + "px";
-                    console.log("test");
+                    
                   };
 
                   // document.querySelectorAll('.accordeon-section')
@@ -26117,8 +26115,7 @@
                     document.documentElement.clientHeight
                   );
                   let last_known_scroll_position = window.pageYOffset;
-                  console.log(scrollHeight + "scroll");
-                  console.log(last_known_scroll_position + "position");
+                
 
                   //   if ((last_known_scroll_position>=500) && (last_known_scroll_position<=(scrollHeight-window.innerHeight)-700)) {
                   //     document.querySelector('.menu-burg').classList.remove('disappeared');
